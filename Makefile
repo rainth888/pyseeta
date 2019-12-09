@@ -1,3 +1,6 @@
+setup:
+	@python setup.py install
+
 run.demo: extract
 	@python examples/test_opencv.py
 
