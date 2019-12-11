@@ -13,7 +13,8 @@ clean:
 	@find -name .pytest_cache | xargs rm -rf
 	@find -name build | xargs rm -rf
 	@find -name dist | xargs rm -rf
-	@rm models/seeta_fr_v1.0.bin
+	@if [ -f "models/seeta_fr_v1.0.bin" ]; then rm models/seeta_fr_v1.0.bin; fi
+	@find -name pyseeta.egg-info | xargs rm -rf
 
 commit: clean
 	@commit
