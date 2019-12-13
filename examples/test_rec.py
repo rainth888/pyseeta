@@ -69,6 +69,9 @@ def test_recognition(img_path,db_path):
     release(aligner,detector,identifier)
 
 if __name__ == '__main__':
-    imgpath = raw_input("test image path: ")
-    dbpath = raw_input("database path:")
+    # imgpath = raw_input("test image path: ")
+    # dbpath = raw_input("database path:")
+    path = "/media/ubuntu/Investigation/DataSet/Image/Face"
+    imgpath = path + "/kjy.jpg"
+    dbpath = path + "/db"
     test_recognition(imgpath,dbpath)
