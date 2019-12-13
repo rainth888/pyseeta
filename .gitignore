@@ -1,0 +1,8 @@
+.vscode/
+build/
+dist/
+pyseeta.egg-info/
+*.pyc
+.DS_store
+
+
