@@ -58,9 +58,9 @@ def test_recognition(img_path,db_path):
                 sim = identifier.calc_similarity(featA, featB)
                 sim_list.append(sim)
             print('sim: {}'.format(sim_list))
-            index = np.argmax(sim_list)
+            # index = np.argmax(sim_list)
             for i, face in enumerate(faces_B):
-                color = (0,255,0) if i == index else (0,0,255)
+                color = (0,255,0) if sim_list[i] > 0.5 else (0,0,255)
                 cv2.rectangle(image_color_B, (face.left, face.top), (face.right, face.bottom), color, thickness=2)
             # cv2.imshow('test', resize(image_color_A))
             cv2.imshow('double', resize(image_color_B))
@@ -72,6 +72,6 @@ if __name__ == '__main__':
     # imgpath = raw_input("test image path: ")
     # dbpath = raw_input("database path:")
     path = "/media/ubuntu/Investigation/DataSet/Image/Face"
-    imgpath = path + "/kjy.jpg"
+    imgpath = path + "/sample.jpg"
     dbpath = path + "/db"
     test_recognition(imgpath,dbpath)
