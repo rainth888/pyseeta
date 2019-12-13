@@ -67,16 +67,5 @@ python examples/{test_opencv.py or test_pillow.py}
 pip uninstall pyseeta
 ```
 
-## Update Log
-
-> **v0.4.0**
-
-1. pretrained model is separate from submodule (`SeetaFaceEngine`) now, which makes clone opreration easier.
-2. pretrained model could be automatic downloaded.
-
-> **v0.3.0**
-
-1. support pillow image
-
 ### Thanks
 - [@TuXiaokang](http://github.com/TuXiaokang/pyseeta.git)
