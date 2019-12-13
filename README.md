@@ -17,13 +17,13 @@
 
 ## Installation
 
-1. Download [pyseeta](https://github.com/TuXiaokang/pyseeta.git)
+1. Download [pyseeta](https://github.com/gaojunying/pyseeta.git)
 
 ```bash
-git clone https://github.com/TuXiaokang/pyseeta.git
+git clone https://github.com/gaojunying/pyseeta.git
 ```
 
-2. Download [SeetaFaceEngine](https://github.com/TuXiaokang/SeetaFaceEngine.git)
+2. Download [SeetaFaceEngine](https://github.com/gaojunying/SeetaFaceEngine.git)
 
 ```bash
 git submodule update --init --recursive
@@ -78,4 +78,5 @@ pip uninstall pyseeta
 
 1. support pillow image
 
-
+### Thanks
+- [@TuXiaokang](http://github.com/TuXiaokang/pyseeta.git)
