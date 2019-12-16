@@ -26,7 +26,7 @@ git clone https://github.com/gaojunying/pyseeta.git
 2. Download [SeetaFaceEngine](https://github.com/gaojunying/SeetaFaceEngine.git)
 
 ```bash
-git submodule update --init --recursive
+git submodule add https://github.com/gaojunying/SeetaFaceEngine SeetaFaceEngine
 ```
 
 3. Build `SeetaFaceEngine` dynamic library.
