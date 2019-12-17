@@ -1,7 +1,10 @@
 .vscode/
+SeetaFaceEngine/
 build/
 dist/
 pyseeta.egg-info/
+SeetaFaceEngine/
+examples/uploads/
 *.pyc
 .DS_store
 models/seeta_fr_v1.0.bin

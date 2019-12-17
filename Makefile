@@ -4,6 +4,12 @@ setup:
 run.demo: extract
 	@python examples/test_opencv.py
 
+run.web.app:
+	@python examples/test_web.py
+
+test.web.app:
+	@python examples/test_rest.py
+
 extract:
 	@cd models;unrar x seeta_fr_v1.0.part1.rar
 
