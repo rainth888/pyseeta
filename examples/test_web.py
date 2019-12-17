@@ -76,8 +76,8 @@ def face_match():
             f1.save(app.config['1.img'],buffer_size=app.config['MAX_CONTENT_LENGTH'])
             f2.save(app.config['2.img'],buffer_size=app.config['MAX_CONTENT_LENGTH'])
             ret = calcsim()
-            resp_data = {"match": str(ret)} # convert numpy._bool to bool for json.dumps
+            resp_data = {"sim": str(ret)} # convert numpy._bool to bool for json.dumps
             return json.dumps(resp_data)      
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True,host='0.0.0.0')
