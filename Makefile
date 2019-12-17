@@ -8,6 +8,7 @@ run.web.app:
 	@python examples/test_web.py
 
 test.web.app:
+	@if [ ! -d "examples/uploads" ]; then mkdir -p examples/uploads; fi
 	@python examples/test_rest.py
 
 extract:
