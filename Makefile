@@ -11,6 +11,9 @@ test.web.app:
 	@if [ ! -d "examples/uploads" ]; then mkdir -p examples/uploads; fi
 	@python examples/test_rest.py
 
+test.rest:
+	@curl -F "file1=@data/1.jpg" -F "file2=@data/2.jpeg" http://0.0.0.0:5000/face_match
+
 extract:
 	@cd models;unrar x seeta_fr_v1.0.part1.rar
 
